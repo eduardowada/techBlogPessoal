@@ -1,3 +1,4 @@
+import { AppController } from './app.controller';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
@@ -22,10 +23,10 @@ import { UsuarioModule } from './usuario/usuario.module';
     }),
     PostagemModule,
     TemaModule,
-    AuthModule,
     UsuarioModule,
+    AuthModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}
