@@ -26,7 +26,7 @@ export class Usuario {
   @ApiProperty()
   public senha: string;
 
-  @Column({ length: 5000 })
+  @Column({ length: 5000, nullable: false, default: '' })
   @ApiProperty()
   public foto: string;
 
